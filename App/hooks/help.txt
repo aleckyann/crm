@@ -1,0 +1,21 @@
+pre_system: Chamado imediatamente a cada inicialização do sistema durante a sua execução.
+Somente as classes de benchmarks e hooks foram carregadas até este ponto.
+Nenhum roteamento ou algum outro processo foi executado ainda.
+
+pre_controller: Chamado imediatamente antes de qualquer um dos seus controller serem chamados.
+Todas as classes base, roteamento e verificações de segurança já foram executadas.
+
+post_controller_constructor: Chamado imediatamente após seu controller ser instanciado, mas antes de qualquer chamada de método ser executada.
+
+post_controller: Chamado imediatamente aós seu controller ser completamente executado.
+
+display_override: Sobrescreve o método _display() usado para enviar uma página já finalizada para o navegador no final da execução do sistema.
+Isto lhe permite usar sua própria metodologia para mostrar suas páginas.
+Note que será necessário você referenciar o superobjeto do CodeIgniter assim: $this->CI =& get_instance()
+ e então os dados já finalizados estarão disponíveis quando você chamar: $this->CI->output->get_output();
+
+cache_override: Habilita a possibilidade de você chamar seu próprio método de _display_cache() na biblioteca Output.
+Isto lhe permite usar seu próprio mecanismo para mostrar a página.
+
+post_system: Chamado depois que a página é renderizada é enviada ao navegador,
+no final da execução do sistema depois dos dados terem sido enviados ao navegador.
