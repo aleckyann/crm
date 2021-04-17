@@ -1,7 +1,7 @@
 <?php
-$config['smtp_host'] = 'smtp.microrcim.com.br';
-$config['smtp_user'] = 'atendimento@microrcim.com.br';
-$config['smtp_pass'] = 'MicrorciM-01';
+$config['smtp_host'] = 'xxxxx';
+$config['smtp_user'] = 'xxxxx';
+$config['smtp_pass'] = 'xxxxxxx';
 $config['smtp_port'] = 587;
 
 $config['protocol']  = 'smtp';
